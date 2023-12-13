@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
             })
 
         val params = MoonPayBuyQueryParams(pk)
-        params.setWalletAddress("0x49F006c1AC9d42b26a5a1F1CFa66393D4FE40338")
+        params.setWalletAddress(address)
 
         val config = MoonPaySdkBuyConfig(
             BuildConfig.DEBUG, MoonPayWidgetEnvironment.Sandbox,
@@ -81,7 +81,7 @@ class MainActivity : AppCompatActivity() {
             })
 
         val params = MoonPaySellQueryParams(pk)
-        params.setWalletAddress("0x49F006c1AC9d42b26a5a1F1CFa66393D4FE40338")
+        params.setWalletAddress(address)
         val config = MoonPaySdkSellConfig(
             BuildConfig.DEBUG, MoonPayWidgetEnvironment.Sandbox,
             params,
